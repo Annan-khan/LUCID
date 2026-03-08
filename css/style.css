@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+    padding: 0;  
+}
+section{
+    margin: o;
+    padding: o;
+}
+
+header{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.nav-item{
+    padding: 0 10px;
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 0 !important;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0;
+    background-color: rgb(133, 192, 240);
+    transition: .4s all ease-in-out;
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(133, 192, 240);
+    transition: .4s all ease-in-out;
+}
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-link:hover::before{
+    width: 48%;
+}
+
+.nav-link:hover::after{
+    width: 48%;
+}
+
+.content h4 {
+    color: red;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content h1 {
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.content p {
+    color: #999999;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.btn-download {
+    color: aliceblue;
+    text-transform: uppercase;
+    border: 1px solid #999999;
+    font-size: 12px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.btn-download:hover{
+    background-color: rgb(118, 190, 226);
+    border-color: rgb(118, 190, 226);
+}
+.view{
+    margin-left: 10px;
+}
+
+.height{
+    min-height: 80vh;
+}
+.Festure section{
+    padding: 50px 0;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.heading h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(118, 190, 226) ;
+
+}
+.heading h1{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.heading span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    position: relative;
+}
+.Festure_section{
+    margin-bottom: 200px;
+}
+.Festure_section .heading span {
+    margin: 20px auto;
+}
+.heading span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(133, 192, 240);
+    transition: .4s all ease-in-out;
+}
+.heading span::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(133, 192, 240);
+    transition: .4s all ease-in-out;
+}
+.heading span:hover::before{
+    width: 48%;
+
+}
+
+.heading span:hover::after{
+    width: 48%;
+
+}
+.Festure_section:hover span::before,.Festure_section:hover span::after{
+    width: 48%;    
+}
+
+.feature_items h2{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+.feature_items p{
+    text-align: center;
+    color: #999999;
+}
+.feature_items{
+    height: 200px;
+}
+.icon_box {
+    display: block;
+    margin: auto;
+}
+.icon_box2 {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: .4s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.icon_box2:hover{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(133, 192, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.items .heading span {
+    margin: 20px 0;
+}
+
+
+.items:hover .heading span::before,
+.items:hover .heading span::after{
+    width: 48%;
+}
+
+.items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+
+.items ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+
+.items ul li img {   
+    margin-right: 10px; 
+}
+
+.items ul li h4 {
+    margin: 0;
+    color: #000;      
+    font-size: 16px;  
+    font-weight: normal;
+    text-transform: none;
+}
+
+.heading p{
+    color: #999999;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.items2 {
+    background-color: #f7f4f4;
+}
+.Testimonial_section{
+    background-image: url(../images/testimonials.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.Testimonial_section .heading{
+    margin-bottom: 50px;  
+    margin-top: 0;
+}
+.Testimonial_section .heading h4{
+    margin-top: 50px;    
+}
+.Testimonial_section .heading h1{
+    color: #f7f4f4;
+}
+
+.slide_item p{
+    color: #fff
+}
+.client {
+    display: flex;
+    margin: 10px 0px;
+}
+.client img {
+    margin-right: 10px;
+    height: 70px;
+    width: 70px !important;
+    border-radius: 50%;
+}
+.client_details {
+    margin: auto 10px;
+}
+.client_details h5{
+    color: #fff
+
+}
+.client_details p{
+    color: #fff
+}
+.Testimonial_section .heading span {
+    margin: 20px auto;
+}
+.Testimonial_section:hover span::before,
+.Testimonial_section:hover span::after{
+    width: 48%;
+}
+.owl-dots .owl-dot span{
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border: 1px solid gray;
+    display: block;
+    margin: 3px;
+    border-radius: 50%;
+}
+.owl-dots .active span{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: 3px;
+    border-radius: 50%;
+}
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.add_section{
+
+    padding: 50px 0;
+
+    background-color: black;
+}
+.add_section h2{
+    
+    color: white;
+        
+    font-size: 25px;
+}
+.add_section span{
+    
+    font-weight: 300;
+}
+.content2{
+    text-align: center;
+}
+.order{
+    color: rgb(118, 190, 226);
+    font-size: 16px;
+    font-weight: 600;
+}
+.pricing_section{
+
+    padding: 60px 0;
+}
+.price_table{
+
+    border: 1px solid gray;
+
+    text-align: center;
+
+    padding: 30px 0px;
+}
+.price_table h2{
+    
+    text-transform: uppercase;
+        
+    font-size: 30px;
+        
+    margin-bottom: 30px;
+
+    transition: .4s all ease-in-out;
+}
+.price{
+
+    border-top: 1px solid gray;
+
+    border-bottom: 1px solid gray;
+
+    padding: 25px 0;
+    
+    transition: .4s all ease-in-out;
+}
+.price h1{
+    
+    font-size: 60px;
+}
+.price sup{
+        
+    font-size: 35px;
+}
+
+.price p{
+    color: gray;
+    padding: 0 !important;
+}
+
+.price_table p{
+
+    padding: 30px 20px;
+}
+
+.price_table:hover .price{
+    background-color: rgb(118, 190, 226);
+}
+
+.price_table:hover h2{
+    color: rgb(118, 190, 226);
+}
+
+.price_table:hover .btn-download{
+    background-color: rgb(118, 190, 226);
+    border-color: rgb(118, 190, 226);
+}
+
+.pricing_section:hover span::before,
+.pricing_section:hover span::after{
+    width: 48%;
+}
+
+.price_table:hover .order{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pricing_section .heading span {
+    margin: 20px auto;
+}
+
+.contact_content{
+    text-align: center;
+}
+.contact {
+    background: #f7f4f4;
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.contact_content p{
+
+    color: gray;
+}
+.contact_img{
+
+    margin-bottom: 15px;
+}
+.contact:hover span::before,
+.contact:hover span::after{
+    width: 48%;
+}
+.contact span {
+    margin: 25px auto 10px;
+}
+.form_box {
+    background: black;
+    padding: 50px;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+.form_box form input{
+    
+    background: transparent;
+        
+}
+.form_box form textarea {
+    background: transparent;
+    height: 145px;
+}
+.form_box form input[type='submit']{
+    
+    border: none;
+        
+    padding: 8px 25px;
+        
+    background: rgb(118, 190, 226);
+        
+    border-radius: 3px;
+        
+    display: block;
+        
+    margin-left: auto;
+}
+
+.map_section iframe{
+    display: block;
+
+}
